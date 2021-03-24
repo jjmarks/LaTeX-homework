@@ -1,0 +1,21 @@
+\ProvidesPackage{homework-template}
+
+% Packages with parameters
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\addtolength{\topmargin}{-.2in}
+
+% Default Packages
+\usepackage{amsmath, amsthm, amssymb, xcolor, multicol, physics, float, graphicx, bm, fancyhdr}
+
+% Question Counter
+\newcounter{qcount}
+
+% Custom Commands
+\renewcommand{\d}{\mathrm{d}}
+\renewcommand{\vec}[1]{\bm{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\sol}{\textbf{Solution}:}
+\newcommand{\question}[1]{\newpage\section*{Question #1}\setcounter{qcount}{#1}}
+\renewcommand{\part}[1]{\subsection*{Part #1}}
