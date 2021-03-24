@@ -1,0 +1,75 @@
+\documentclass{article}
+
+% Packages with parameters
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\addtolength{\topmargin}{-.2in}
+
+% Default Packages
+\usepackage{amsmath, amsthm, amssymb, xcolor, multicol, physics, float, graphicx, bm, fancyhdr}
+
+% Fancier \todo{thing} references
+% Uncomment [disable] to hide
+\usepackage
+%[disable]
+{todonotes}
+
+% Question Counter
+\newcounter{qcount}
+
+% Custom Commands
+\renewcommand{\d}{\mathrm{d}}
+\renewcommand{\vec}[1]{\bm{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\sol}{\textbf{Solution}:}
+\newcommand{\question}[1]{\newpage\section*{Question #1}\setcounter{qcount}{#1}}
+\renewcommand{\part}[1]{\subsection*{Part #1}}
+
+
+
+%%%%% PARAMETERS TO EDIT %%%%%
+\def\modulecode{MASXXXX}
+\def\modulename{MODULE NAME}
+\def\hwknumber{X}
+\date{Monday 1st January}
+\author{Joseph Marks}
+
+\title{\modulecode: \modulename \\ \large Homework \hwknumber}
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{\modulecode: Homework \hwknumber}}
+\chead{\textbf{Question \theqcount}}
+\rhead{\textbf{Page \thepage}}
+\setlength{\headsep}{0.15in}
+
+\begin{document}
+\maketitle 
+\thispagestyle{empty}
+
+% Uncomment below for todo list
+%\lisoftodos
+
+
+\question{1}
+\part{A}
+Do this thing:
+\begin{equation*}
+a + b + c = 1
+\end{equation*}
+\sol\\[5px]
+This is my answer.
+
+\question{2}
+\part{A}
+Do something else.
+\begin{equation*}
+a + b + c = 2
+\end{equation*}
+\sol\\[5px]
+This is my new answer
+
+\end{document}
+
